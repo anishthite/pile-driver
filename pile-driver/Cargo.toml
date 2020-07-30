@@ -1,0 +1,24 @@
+[package]
+name = "pile-driver"
+version = "0.1.0"
+authors = ["Anish Thite <anishthite@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+
+[dependencies]
+bcrypt = "0.8"
+chrono = "0.4"
+diesel = { version = "1.0.0", features = ["mysql", "numeric"] }
+nanoid = "0.3.0"
+r2d2 = "*"
+r2d2-diesel = "*"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rocket = "0.4.5"
+#rocket = { version = "0.4.5", features = ["tls"] }
+rocket_contrib = "0.4.5"
+rocket_cors = "0.5.1"
+time = "0.1.37"
